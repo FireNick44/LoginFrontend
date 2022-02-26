@@ -9,7 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src='script.js'></script>
-    
+
     <title>X</title>
 </head>
 
@@ -25,62 +25,86 @@
             </svg>
         </div>
     </div>
-    <div class="content">
-        <div class="card">
-            <div class="card-body">
+    <main class="content background">
+
+        <nav class="navigation">
+            <div>
+                <a href="#" class="navlink">Log In</a>
+                <a href="#" class="navlink">Sign Up</a>
+            </div>
+            <div>
+                <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                    </path>
+                </svg>
+                <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+            </div>
+        </nav>
+
+        <div class="centerX">
+            <div class="card">
                 <form action="#">
-                    <div class="mb-4"><label class="mb-2" for="exampleInputEmailCard1">Your Email</label>
-                        <div class="input-group">
-                            <span class="input-group-text " id="basic-addon1">
-                                <svg
-                                    class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill=""
-                                    style="--darkreader-inline-fill:currentColor;">
+                    <div class="center">
+                        <div class="title-logo background"></div>
+                    </div>
+                    <div class="center">
+                        <h1 class="title">Log In</h1>
+                    </div>
+
+                    <div class="section">
+                        <label>Your Email</label>
+                        <input type="email" class="mail" placeholder="example@company.com" id="mail">
+                        <div class="mail-icon">
+                            <span>
+                                <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
                                     </path>
                                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                 </svg>
                             </span>
-                            <input type="email" class="form-control" placeholder="example@company.com" id="exampleInputEmailCard1" aria-describedby="exampleInputEmailCard1" required=""></div>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label class="mb-2" for="exampleInputPasswordCard1">Your Password</label>
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon2">
-                                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill=""
-                                    style="--darkreader-inline-fill:currentColor;">
+
+                    <div class="section">
+                        <div class="section-next">
+                            <label>Your Password</label>
+                            <a href="#" class="link">Forgot password?</a>
+                        </div>
+                        <input type="password" class="pw" placeholder="password" id="pw">
+
+                        <div class="pw-icon">
+                            <span>
+                                <svg class="icon" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
                                         d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                                         clip-rule="evenodd">
                                     </path>
                                 </svg>
                             </span>
-                            <input type="password" class="form-control" placeholder="Password"
-                                id="exampleInputPasswordCard1" aria-describedby="exampleInputPasswordCard1" required="">
                         </div>
                     </div>
-                    <div class="d-block d-sm-flex justify-content-between align-items-center mb-4">
-                        <div class="form-check mb-0">
-                            <input class="form-check-input" type="checkbox" id="defaultCheck5" value="">
-                                <label class="form-check-label mb-0" for="defaultCheck5">Remember me</label>
-                        </div>
-                        <div>
-                            <a href="#" class="small text-right">Lost password?</a>
-                        </div>
+
+                    <div class="section">
+                        <button type="submit" class="submit">Sign in</button>
                     </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
+
                 </form>
-                <div class="d-block d-sm-flex align-items-center mt-4">
-                    <span class="fw-normal small">Not registered?
-                        <a href="#" class="fw-bold ms-2">Create account</a>
-                    </span>
+
+                <div class="section-next">
+                    <label>Not registered?</label>
+                    <a href="#" class="link">Create account</a>
                 </div>
+
             </div>
         </div>
-    </div>
+    </main>
     <script src="script.js" charset="utf-8"></script>
 </body>
 
