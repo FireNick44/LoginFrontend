@@ -6,20 +6,22 @@ html {
     width: 100%;
     height: 100%
 }
+
 body {
     font-family: 'Inconsolata', monospace;
     font-size: 1.6rem;
     background-color: #000000;
     color: #fff;
-    overflow-x: hidden;
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%
 }
+
 .disappear {
     animation: vanish 1s forwards;
 }
+
 .loader {
     position: fixed;
     top: 0;
@@ -31,20 +33,24 @@ body {
     border-color: #ffffff;
     border-width: 4px;
 }
+
 .content {
     display: none;
     height: 100%;
     width: 100%;
 }
+
 .appear {
     display: block;
 }
+
 @keyframes vanish {
     100% {
         opacity: 0;
         visibility: hidden;
     }
 }
+
 .x {
     display: flex;
     justify-content: center;
@@ -52,20 +58,24 @@ body {
     height: 100%;
     width: calc(100%-60px);
 }
+
 .x #logo path:first-child {
     stroke-width: 1;
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     animation: line-anim 2s ease .2s forwards
 }
+
 .x svg {
     animation: fill .6s ease-in 2s forwards
 }
+
 @keyframes line-anim {
     to {
         stroke-dashoffset: 0
     }
 }
+
 @keyframes fill {
     0% {
         fill: transparent
@@ -75,18 +85,27 @@ body {
         fill: #ffffff
     }
 }
+.background {
+    background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%),
+        linear-gradient(180deg, #6100FF 0%, #000000 100%),
+        linear-gradient(235deg, #a3e2ff 0%, #a3b8ff 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #0089c9 calc(70% + 1px), #00C9B1 100%),
+        linear-gradient(125deg, #b1a3ff 0%, #2c2fee 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #0089c9 calc(70% + 1px), #00C9B1 100%);
+    background-blend-mode: soft-light, screen, darken, normal;
+}
 .centerX {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: calc(100% - 140px);
     width: 100%;
 }
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .card {
     backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(11, 21, 40, 0.75);
@@ -94,15 +113,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.125);
     display: flex;
     flex-direction: column;
-    height: 420px;
     padding: 40px 16px 40px 16px;
     width: 380px;
 }
+
 input:hover {
     border: 1px solid #2ea44f;
     transition: .3s all;
 
 }
+
 input:focus {
     border: 1px solid #21793a;
     outline: none;
@@ -155,6 +175,39 @@ input:focus {
     padding: 9px 34px 9px 16px;
     width: calc(100% - 52px);
 }
+.icon{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    right: 0px;
+}
+.iconup{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+}
+.icon.mail{
+    top: 239px;
+}
+.icon.pw{
+    top: 325px;
+}
+.icon.userup{
+    top: 238px;
+    right: 20px;
+}
+.icon.mailup{
+    top: 325px;
+    right: 20px;
+}
+.icon.pwup{
+    top: 413px;
+    right: 20px;
+}
+.icon.pwreup{
+    top: 499px;
+    right: 20px;
+}
 
 .mail-icon {
     position: absolute;
@@ -187,15 +240,6 @@ input:focus {
     border-radius: 80px;
 }
 
-.background {
-    background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%),
-        linear-gradient(180deg, #6100FF 0%, #000000 100%),
-        linear-gradient(235deg, #a3e2ff 0%, #a3b8ff 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #0089c9 calc(70% + 1px), #00C9B1 100%),
-        linear-gradient(125deg, #b1a3ff 0%, #2c2fee 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #0089c9 calc(70% + 1px), #00C9B1 100%);
-    background-blend-mode: soft-light, screen, darken, normal;
-    overflow: hidden;
-}
-
 label {
     display: block;
     font-size: 16.5px;
@@ -221,14 +265,14 @@ label {
     text-decoration: none;
 }
 
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     height: 50px;
-    width: 75%;
+    width: 70%;
 }
 
 .navlink {
@@ -237,4 +281,57 @@ label {
     font-weight: bold;
     text-decoration: none;
     margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+.wrapper-menu {
+    margin-top: 10px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+}
+
+.wrapper-menu.open {
+    transform: rotate(-45deg);
+}
+
+.line-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 4px;
+}
+
+.line-menu.half {
+    width: 50%;
+}
+
+.line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+
+.open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+
+.line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+.open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
 }

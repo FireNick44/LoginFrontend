@@ -13,3 +13,10 @@ async function vanish() {
     await Sleep(100);
     content.classList.add("appear");
 }
+
+
+var wrapperMenu = document.querySelector('.wrapper-menu');
+
+wrapperMenu.addEventListener('click', function(){
+  wrapperMenu.classList.toggle('open');  
+})
