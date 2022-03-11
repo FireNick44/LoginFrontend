@@ -14,8 +14,11 @@ async function vanish() {
   content.classList.add("appear");
 }
 
-var wrapperMenu = document.querySelector('.wrapper-menu');
+var ModeMenu = document.querySelector(".cardmode");
+var BG = document.querySelector(".background")
 
-wrapperMenu.addEventListener('click', function(){
-  wrapperMenu.classList.toggle('open');  
-})
+
+ModeMenu.addEventListener("click", function(){
+  ModeMenu.classList.toggle("open");
+  BG.classList.toggle("background2")
+}) 

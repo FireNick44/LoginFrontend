@@ -92,6 +92,15 @@ body {
         linear-gradient(125deg, #b1a3ff 0%, #2c2fee 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #0089c9 calc(70% + 1px), #00C9B1 100%);
     background-blend-mode: soft-light, screen, darken, normal;
 }
+
+.background2{
+    background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%),
+        linear-gradient(180deg, #9f79db 0%, #252525 100%),
+        linear-gradient(235deg, #a3e2ff 0%, #a3b8ff 40%, #000ba0 calc(40% + 1px), #104e81 60%, #4cacbb calc(60% + 1px), #6fa3ac 70%, #3aa0cf calc(70% + 1px), #33c9b7 100%),
+        linear-gradient(125deg, #b1a3ff 0%, #6e83c7 40%, #000ba0 calc(40% + 1px), #104e81 60%, #4cacbb calc(60% + 1px), #6fa3ac 70%, #3aa0cf calc(70% + 1px), #33c9b7 100%);
+    background-blend-mode: soft-light, screen, darken, normal;
+}
+
 .centerX {
     display: flex;
     justify-content: center;
@@ -338,6 +347,9 @@ label {
     cursor: pointer;
 }
 
+.open .c-toggle__body{
+    transform: translateY(-32px);
+}
 
 .c-toggle {
     width: 4rem;
