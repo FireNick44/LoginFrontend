@@ -329,9 +329,26 @@ label {
 }
 
 .test4{
-    background-color: rgb(63, 138, 138);
-    position:absolute;
-    right: calc(15% - 10px);
-    height: 45px;
-    width: 150px;
+    background-color: #00043C;
+    height: 50px;
+    width: 50px;
+}
+
+.test5{
+    background-color: #0e18a5;
+    height: 80px;
+    width: 50px;
+}
+
+.test6{
+    color: white;
+}
+
+.ionicon{
+    height: 35px;
+    width: 35px;
+}
+.ionicon2{
+    height: 20px;
+    width: 20px;
 }

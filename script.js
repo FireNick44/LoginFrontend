@@ -14,25 +14,8 @@ async function vanish() {
   content.classList.add("appear");
 }
 
-var menu = document.querySelector('.wrapper-menu');
+var wrapperMenu = document.querySelector('.wrapper-menu');
 
 wrapperMenu.addEventListener('click', function(){
-  wrapperMenu.classList.toggle('open');
-  menu;
+  wrapperMenu.classList.toggle('open');  
 })
-
-var test1 = true;
-
-function menu(){
-  if(test1 == true){
-    test4.classList.add("disappear");
-    test4.classList.remove("appear")
-    test1 = false;
-    console.log("dwadawd");
-  }
-  else if(test1 == false){
-    test4.classList.add("appear");
-    test4.classList.remove("disappear")
-    test1 = true;
-  }
-}
