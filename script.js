@@ -14,24 +14,25 @@ async function vanish() {
   content.classList.add("appear");
 }
 
-var ModeMenu = document.querySelector(".cardmode");
-var BG = document.querySelector(".background");
-var Cards = document.querySelector(".card.cardpw");
-var Cards1 = document.querySelector(".card.cardmode");
-var Body = document.body
-var PW = document.querySelector(".pw");
-var Mail = document.querySelector(".mail");
-var Nav = document.querySelector(".navlink");
-var Nav1 = document.querySelector(".navlink1");
+var modemenu = document.querySelector(".cardmode");
+var bg = document.querySelector(".background");
+var cards = document.querySelector(".card.cardpw");
+var cards1 = document.querySelector(".card.cardmode");
+var body = document.body
+var pw = document.querySelector(".pw");
+var mail = document.querySelector(".mail");
+var lnk = document.querySelector(".navlink");
+var lnk1 = document.querySelector(".navlink1");
 
-ModeMenu.addEventListener("click", function(){
-  ModeMenu.classList.toggle("open");
-  BG.classList.toggle("background2")
-  Cards.classList.toggle("card2");
-  Cards1.classList.toggle("card2");
-  Body.classList.toggle("body2");
-  PW.classList.toggle("pw2");
-  Mail.classList.toggle("mail2");
-  Nav.classList.toggle("nav2");
-  Nav1.classList.toggle("nav2");
-}) 
+modemenu.addEventListener("click", function(){
+
+  modemenu.classList.toggle("open");
+  bg.classList.toggle("background-light")
+  cards.classList.toggle("card-light");
+  cards1.classList.toggle("card-light");
+  body.classList.toggle("body2");
+  pw.classList.toggle("pw2");
+  mail.classList.toggle("mail2");
+  lnk.classList.toggle("nav2");
+  lnk1.classList.toggle("nav2");
+});
