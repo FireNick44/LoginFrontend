@@ -19,6 +19,11 @@ body {
     transition: ease-out 300ms;
 }
 
+.body-light{
+    color: black !important;
+    transition: ease-out 300ms;
+}
+
 .disappear {
     animation: vanish 1s forwards;
 }
@@ -128,6 +133,11 @@ body {
     transition: ease-out 100ms;
 }
 
+.card.cardpw{
+    width: 380px;
+    padding: 40px 16px 40px 16px;
+}
+
 .card-light {
     backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.75);
@@ -136,11 +146,6 @@ body {
     display: flex;
     flex-direction: column;
     transition: ease-out 100ms;
-}
-
-.card.cardpw{
-    width: 380px;
-    padding: 40px 16px 40px 16px;
 }
 
 input:hover {
@@ -182,7 +187,9 @@ input:focus {
     transition: .3s all;
 }
 
+.username,
 .mail,
+.pw-rep,
 .pw {
     appearance: none;
     background-clip: padding-box;
@@ -199,6 +206,16 @@ input:focus {
     width: calc(100% - 52px);
     transition: ease-out 100ms;
 }
+
+.username-light,
+.mail-light,
+.pw-rep-light,
+.pw-light {
+    background-color: white !important;
+    color: black !important;
+    transition: ease-out 100ms;
+}
+
 .icon{
     position: absolute;
     height: 28px;
@@ -282,13 +299,6 @@ label {
     margin-right: 5px;
 }
 
-.link {
-    font-weight: bold;
-    color: #1a93cf;
-    font-size: 16.5px;
-    text-decoration: none;
-}
-
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -299,15 +309,29 @@ label {
     width: 70%;
 }
 
+.link {
+    font-weight: bold;
+    color: #1a93cf;
+    font-size: 16.5px;
+    text-decoration: none;
+}
+
 .navlink {
-    color: white;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     margin: 10px;
     transition: ease-out 300ms;
 }
-
+.navlink.lnk1{
+    color: white;
+}
+.navlink.lnk2{
+    color: white;
+}
+.navlink.lnk-light{
+    color: black !important;
+}
 .card.cardmode{
     width: 4rem;
     height: 4rem;
@@ -316,7 +340,6 @@ label {
     border-radius: 0.4rem;
     cursor: pointer;
 }
-
 
 .mode-body {
     display: flex;
@@ -328,6 +351,7 @@ label {
     top: 0;
     transition: all 320ms ease-out 50ms;
 }
+
 .open .mode-body{
     transform: translateY(-32px);
 }
@@ -336,29 +360,4 @@ label {
     display: block;
     width: 3.2rem;
     margin: 0.4rem;
-}
-
-.body2{
-    color: black !important;
-    transition: ease-out 300ms;
-}
-
-.mail2, .pw2{
-    background-color: white !important;
-    color: black !important;
-    transition: ease-out 100ms;
-}
-
-.nav2{
-    color: black !important;
-    transition: ease-out 300ms;
-}
-
-.navlink1{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 10px;
-    transition: ease-out 300ms;
 }

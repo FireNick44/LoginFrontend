@@ -16,23 +16,28 @@ async function vanish() {
 
 var modemenu = document.querySelector(".cardmode");
 var bg = document.querySelector(".background");
+var lnk = document.querySelector(".navlink.lnk1");
+var lnk1 = document.querySelector(".navlink.lnk2");
 var cards = document.querySelector(".card.cardpw");
 var cards1 = document.querySelector(".card.cardmode");
-var body = document.body
-var pw = document.querySelector(".pw");
+var body = document.body;
+var username = document.querySelector(".username");
+var pwrep = document.querySelector(".pw-rep");
 var mail = document.querySelector(".mail");
-var lnk = document.querySelector(".navlink");
-var lnk1 = document.querySelector(".navlink1");
+var pw = document.querySelector(".pw");
 
 modemenu.addEventListener("click", function(){
 
   modemenu.classList.toggle("open");
-  bg.classList.toggle("background-light")
+  bg.classList.toggle("background-light");
   cards.classList.toggle("card-light");
   cards1.classList.toggle("card-light");
-  body.classList.toggle("body2");
-  pw.classList.toggle("pw2");
-  mail.classList.toggle("mail2");
-  lnk.classList.toggle("nav2");
-  lnk1.classList.toggle("nav2");
+  body.classList.toggle("body-light");
+  pw.classList.toggle("pw-light");
+  pwrep.classList.toggle("pw-rep-light");
+  mail.classList.toggle("mail-light");
+  username.classList.toggle("username-light");
+  lnk.classList.toggle("lnk-light");
+  lnk1.classList.toggle("lnk-light");
+
 });
