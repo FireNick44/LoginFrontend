@@ -33,9 +33,9 @@ modemenu.addEventListener("click", function(){
   cards.classList.toggle("card-light");
   cards1.classList.toggle("card-light");
   body.classList.toggle("body-light");
+  mail.classList.toggle("mail-light");
   pw.classList.toggle("pw-light");
   pwrep.classList.toggle("pw-rep-light");
-  mail.classList.toggle("mail-light");
   username.classList.toggle("username-light");
   lnk.classList.toggle("lnk-light");
   lnk1.classList.toggle("lnk-light");
