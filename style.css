@@ -324,15 +324,19 @@ label {
     margin: 10px;
     transition: ease-out 300ms;
 }
+
 .navlink.lnk1{
     color: white;
 }
+
 .navlink.lnk2{
     color: white;
 }
+
 .navlink.lnk-light{
     color: black !important;
 }
+
 .card.cardmode{
     width: 4rem;
     height: 4rem;
