@@ -134,11 +134,6 @@ body {
     transition: ease-out 100ms;
 }
 
-.card.cardpw{
-    width: 380px;
-    padding: 40px 16px 40px 16px;
-}
-
 .card-light {
     backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.75);
@@ -147,6 +142,20 @@ body {
     display: flex;
     flex-direction: column;
     transition: ease-out 100ms;
+}
+
+.card.cardpw{
+    width: 380px;
+    padding: 40px 16px 40px 16px;
+}
+
+.card.cardmode{
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 0.4rem;
+    cursor: pointer;
 }
 
 input:hover {
@@ -337,16 +346,7 @@ label {
     color: black !important;
 }
 
-.card.cardmode{
-    width: 4rem;
-    height: 4rem;
-    overflow: hidden;
-    display: inline-block;
-    border-radius: 0.4rem;
-    cursor: pointer;
-}
-
-.mode-body {
+.mode-body{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,12 +357,14 @@ label {
     transition: all 320ms ease-out 50ms;
 }
 
-.open .mode-body{
-    transform: translateY(-32px);
-}
-
-.mode-icon {
+.mode-icon{
     display: block;
     width: 3.2rem;
     margin: 0.4rem;
 }
+
+.open .mode-body{
+    transform: translateY(-32px);
+}
+
+
