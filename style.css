@@ -28,6 +28,10 @@ body {
     animation: vanish 1s forwards;
 }
 
+.disappearNull{
+    display: none;
+}
+
 .loader {
     position: fixed;
     top: 0;

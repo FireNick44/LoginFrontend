@@ -1,19 +1,32 @@
 var loader = document.querySelector(".loader")
 var content = document.querySelector(".content")
 
-window.addEventListener("load", vanish);
 
+//Sleep
 function Sleep(milliseconds) {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-async function vanish() {
-  await Sleep(2000);
-  loader.classList.add("disappear");
-  await Sleep(100);
-  content.classList.add("appear");
-}
+window.addEventListener("load", sessionLoadPage);
 
+
+//PageLoader
+async function sessionLoadPage() {
+  if(!sessionStorage.getItem("pageWasLoaded")) {
+      await Sleep(3000);
+      loader.classList.add("disappear");
+      await Sleep(100);
+      content.classList.add("appear");
+      sessionStorage.setItem("pageWasLoaded", true);
+  }
+  else if (sessionStorage.getItem("pageWasLoaded")) {
+      loader.classList.add("disappearNull");
+      content.classList.add("appear");
+  }
+} 
+
+
+//Darkmode & Lightmode
 var body = document.body;
 var modemenu = document.querySelector(".cardmode");
 var bg = document.querySelector(".background");
@@ -27,7 +40,6 @@ var pw = document.querySelector(".pw");
 var pwrep = document.querySelector(".pw-rep");
 
 modemenu.addEventListener("click", function(){
-
   modemenu.classList.toggle("open");
   body.classList.toggle("body-light");
   bg.classList.toggle("background-light");
