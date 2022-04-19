@@ -13,14 +13,16 @@ window.addEventListener("load", sessionLoadPage);
 //PageLoader
 async function sessionLoadPage() {
   if(!sessionStorage.getItem("pageWasLoaded")) {
-      await Sleep(3000);
+      await Sleep(4000);
       loader.classList.add("disappear");
       await Sleep(100);
       content.classList.add("appear");
       sessionStorage.setItem("pageWasLoaded", true);
   }
   else if (sessionStorage.getItem("pageWasLoaded")) {
-      loader.classList.add("disappearNull");
+      await Sleep(2000);
+      loader.classList.add("disappear");
+      await Sleep(100);
       content.classList.add("appear");
   }
 } 
