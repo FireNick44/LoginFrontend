@@ -13,6 +13,7 @@ window.addEventListener("load", sessionLoadPage);
 //PageLoader
 async function sessionLoadPage() {
   if(!sessionStorage.getItem("pageWasLoaded")) {
+      loader.classList.add("appear");
       await Sleep(3000);
       loader.classList.add("disappear");
       await Sleep(100);
