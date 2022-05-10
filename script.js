@@ -57,3 +57,15 @@ modemenu.addEventListener("click", function(){
   username.classList.toggle("username-light");
   pwrep.classList.toggle("pw-rep-light");
 });
+
+
+//Get Userdata from json
+var usersJson = '[{ "username": "Tim", "password": "gugus" }, {"username": "Yazdan", "password": "gugus"}]';
+var usersArray = JSON.parse(usersJson);
+
+for (var i = 0; i < usersObject.length; i++) {
+    if()
+  
+}
+
+https://stackoverflow.com/questions/32373585/how-to-check-if-username-is-same-json-array
