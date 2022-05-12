@@ -9,7 +9,6 @@ function Sleep(milliseconds) {
 
 window.addEventListener("load", sessionLoadPage);
 
-
 //PageLoader
 async function sessionLoadPage() {
   if(!sessionStorage.getItem("pageWasLoaded")) {
@@ -26,7 +25,7 @@ async function sessionLoadPage() {
       await Sleep(100);
       content.classList.add("appear");
   }
-} 
+}
 
 
 //Darkmode & Lightmode
@@ -60,12 +59,21 @@ modemenu.addEventListener("click", function(){
 
 
 //Get Userdata from json
-var usersJson = '[{ "username": "Tim", "password": "gugus" }, {"username": "Yazdan", "password": "gugus"}]';
-var usersArray = JSON.parse(usersJson);
+//var usersJson = '[{ "username": "Tim", "password": "gugus" }, {"username": "Yazdan", "password": "gugus"}]';
+//var usersArray = JSON.parse(usersJson);
 
-for (var i = 0; i < usersObject.length; i++) {
-    if()
-  
-}
 
-https://stackoverflow.com/questions/32373585/how-to-check-if-username-is-same-json-array
+//ID's:
+
+//--sign up: 
+//id="username"
+//id="mail"
+//id="pw" 
+//id="pw-rep"
+
+//--sign in:
+//id="mail"
+//id="pw"
+
+
+// https://stackoverflow.com/questions/32373585/how-to-check-if-username-is-same-json-array
