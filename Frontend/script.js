@@ -27,7 +27,6 @@ async function sessionLoadPage() {
   }
 }
 
-
 //Darkmode & Lightmode
 var body = document.body;
 var modemenu = document.querySelector(".cardmode");
