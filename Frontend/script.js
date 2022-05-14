@@ -28,7 +28,27 @@ async function sessionLoadPage() {
 
 //Darkmode & Lightmode
 var body = document.body;
+
 var modemenu = document.querySelector(".cardmode");
+
+if (modemenu) {
+  modemenu.addEventListener("click", function(){
+    modemenu.classList.toggle("open");
+    body.classList.toggle("body-light");
+    bg.classList.toggle("background-light");
+    lnk.classList.toggle("lnk-light");
+    lnk1.classList.toggle("lnk-light");
+    cards.classList.toggle("card-light");
+    cards1.classList.toggle("card-light");
+    
+    mail.classList.toggle("mail-light");
+    pw.classList.toggle("pw-light");
+  
+    username.classList.toggle("username-light");
+    pwrep.classList.toggle("pw-rep-light");
+  });
+  
+}
 var bg = document.querySelector(".background");
 var lnk = document.querySelector(".navlink.lnk1");
 var lnk1 = document.querySelector(".navlink.lnk2");
