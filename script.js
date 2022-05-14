@@ -1,13 +1,12 @@
 var loader = document.querySelector(".loader")
 var content = document.querySelector(".content")
 
+window.addEventListener("load", sessionLoadPage);
 
 //Sleep
 function Sleep(milliseconds) {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
-
-window.addEventListener("load", sessionLoadPage);
 
 //PageLoader
 async function sessionLoadPage() {
@@ -20,13 +19,12 @@ async function sessionLoadPage() {
       sessionStorage.setItem("pageWasLoaded", true);
   }
   else if (sessionStorage.getItem("pageWasLoaded")) {
-      await Sleep(2000);
+      await Sleep(1000);
       loader.classList.add("disappear");
       await Sleep(100);
       content.classList.add("appear");
   }
 }
-
 
 //Darkmode & Lightmode
 var body = document.body;
@@ -41,7 +39,7 @@ var mail = document.querySelector(".mail");
 var pw = document.querySelector(".pw");
 var pwrep = document.querySelector(".pw-rep");
 
-modemenu.addEventListener("click", function(){
+function onModemenuKlick(){
   modemenu.classList.toggle("open");
   body.classList.toggle("body-light");
   bg.classList.toggle("background-light");
@@ -52,28 +50,7 @@ modemenu.addEventListener("click", function(){
   
   mail.classList.toggle("mail-light");
   pw.classList.toggle("pw-light");
-
+  
   username.classList.toggle("username-light");
   pwrep.classList.toggle("pw-rep-light");
-});
-
-
-//Get Userdata from json
-//var usersJson = '[{ "username": "Tim", "password": "gugus" }, {"username": "Yazdan", "password": "gugus"}]';
-//var usersArray = JSON.parse(usersJson);
-
-
-//ID's:
-
-//--sign up: 
-//id="username"
-//id="mail"
-//id="pw" 
-//id="pw-rep"
-
-//--sign in:
-//id="mail"
-//id="pw"
-
-
-// https://stackoverflow.com/questions/32373585/how-to-check-if-username-is-same-json-array
+}
