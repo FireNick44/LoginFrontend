@@ -37,7 +37,7 @@ a:active{
 }
 
 .disappearNull{
-    display: none;
+    display: none !important;
 }
 
 .loader {
