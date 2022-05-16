@@ -32,7 +32,7 @@ The website was tested on Chrome and Edge without any problems. However, on Fire
 - [x] Google Chrome or Chromium based browsers (Opera, Brave)
 - [x] Microsoft Edge
 - [x] Firefox _(with one known issue)_ 
-- [ ] Safari _(with one known issue)_
+- [x] Safari _(with one known issue)_
 - [ ] Internet Explorer _...nahh dont think so_
 
  ## License
