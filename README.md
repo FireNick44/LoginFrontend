@@ -25,18 +25,18 @@ The project offers an all around good login system layout. When you start the we
 
 ## Known issues
 
-The website was tested on Google chrome and Microsoft edge without any problems. However, on Mozilla firefox there were issues with displaying the svg's.
+The website was tested on Chrome and Edge without any problems. However, on Firefox and Safari there were issues with displaying the svg's.
 
 ### Supported browsers
 
 - [x] Google Chrome or Chromium based browsers (Opera, Brave)
 - [x] Microsoft Edge
 - [x] Firefox _(with one known issue)_ 
-- [ ] Safari _(not tested)_
-- [ ] Internet Explorer _nahh dont think so.._
+- [ ] Safari _(with one known issue)_
+- [ ] Internet Explorer _...nahh dont think so_
 
  ## License
 
 Project is [MIT licensed](./LICENSE)
 
-<p align="center">(<a href="#top"> to top </a>)</p>
+<p align="center">(<a href="#top"> top </a>)</p>
