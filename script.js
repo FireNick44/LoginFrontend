@@ -30,13 +30,13 @@ async function sessionLoadPage() {
 
 //Darkmode & Lightmode
 var body = document.body;
-var modemenu = document.querySelector(".cardmode");
+var modemenu = document.querySelector(".mode-card");
 var bg = document.querySelector(".background");
-var lnk = document.querySelector(".navlink.lnk1");
-var lnk1 = document.querySelector(".navlink.lnk2");
-var cards = document.querySelector(".card.cardpw");
-var cards1 = document.querySelector(".card.cardmode");
-var cards2 = document.querySelector(".card.usercard");
+var lnk = document.querySelector(".navlink.link-1");
+var link-1 = document.querySelector(".navlink.link-2");
+var cards = document.querySelector(".card.password-card");
+var cards1 = document.querySelector(".card.mode-card");
+var cards2 = document.querySelector(".card.user-card");
 var username = document.querySelector(".username");
 var mail = document.querySelector(".mail");
 var pw = document.querySelector(".pw");
@@ -53,7 +53,7 @@ function themeMenu(){
 
   if(cards2 == null){
     lnk.classList.toggle("lnk-light"); //null bei user
-    lnk1.classList.toggle("lnk-light"); //null bei user
+    link-1.classList.toggle("lnk-light"); //null bei user
     cards.classList.toggle("card-light");
     mail.classList.toggle("mail-light"); //null bei user
     pw.classList.toggle("pw-light"); //null bei user
